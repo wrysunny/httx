@@ -1,0 +1,25 @@
+package httx
+
+import "crypto/tls"
+
+var tlsConfig = &tls.Config{
+	InsecureSkipVerify: false,
+	CipherSuites: []uint16{
+		0x6a6a,
+		0x1301,
+		0x1302,
+		0x1303,
+		0xc02b,
+		0xc02f,
+		0xc02c,
+		0xc030,
+		0xcca9,
+		0xcca8,
+		0xc013,
+		0xc014,
+		0x009c,
+		0x009d,
+		0x002f,
+		0x0035,
+	},
+}
